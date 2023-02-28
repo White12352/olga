@@ -57,6 +57,7 @@ rm -rf feeds/luci/applications/luci-app-smartdns
 rm -rf feeds/packages/net/smartdns
 svn co https://github.com/281677160/openwrt-package/trunk/luci-app-smartdns package/luci-app-smartdns
 svn co https://github.com/281677160/openwrt-package/trunk/smartdns package/smartdns
+rm -rf feeds/luci/applications/luci-app-turboacc
 #svn co https://github.com/kenzok8/openwrt-packages/trunk/aliyundrive-webdav package/aliyundrive-webdav
 #svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-aliyundrive-webdav package/luci-app-aliyundrive-webdav
 git clone --depth=1 https://github.com/messense/aliyundrive-webdav.git package/aliyundrive-webdav
