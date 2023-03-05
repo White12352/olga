@@ -28,6 +28,7 @@ sed -i 's/192.168.6.1/192.168.5.5/g' package/base-files/files/bin/config_generat
 
 # git clone https://github.com/siropboy/sirpdboy-package package/sirpdboy-package
 # git clone https://github.com/small-5/luci-app-adblock-plus package/adblock-plus
+rm -rf feeds/luci/applications/luci-app-alist
 rm -rf feeds/packages/lang/golang
 svn export https://github.com/sbwml/packages_lang_golang/branches/19.x feeds/packages/lang/golang
 rm -rf feeds/packages/lang/node
@@ -86,7 +87,7 @@ svn co https://github.com/281677160/openwrt-package/trunk/smartdns package/smart
 rm -rf feeds/luci/applications/luci-app-turboacc
 #svn co https://github.com/kenzok8/openwrt-packages/trunk/aliyundrive-webdav package/aliyundrive-webdav
 #svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-aliyundrive-webdav package/luci-app-aliyundrive-webdav
-git clone --depth=1 https://github.com/messense/aliyundrive-webdav.git package/aliyundrive-webdav
+#git clone --depth=1 https://github.com/messense/aliyundrive-webdav.git package/aliyundrive-webdav
 #rm -rf package/feeds/luci/luci-theme-neobird
 #git clone https://github.com/lwb1978/luci-theme-neobird.git package/feeds/luci/luci-theme-neobird
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/feeds/luci/luci-theme-argon-18.06
