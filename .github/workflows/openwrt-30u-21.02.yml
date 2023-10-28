@@ -61,8 +61,6 @@ jobs:
 
     - name: Load custom feeds
       run: |
-        #rm -rf openwrt/target/linux/mediatek
-        #svn co https://github.com/hanwckf/immortalwrt-mt798x/branches/openwrt-21.02/target/linux/mediatek
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
         chmod +x $DIY_P1_SH
         cd openwrt
